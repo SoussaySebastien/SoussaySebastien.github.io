@@ -1,0 +1,739 @@
+/* Police pour l'effet Loki */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Amatic+SC&family=Are+You+Serious&family=Bangers&family=Black+Ops+One&family=Cabin+Sketch&family=Comforter&family=Cookie&family=Fjalla+One&family=Fredericka+the+Great&family=Henny+Penny&family=Indie+Flower&family=Kalam&family=Kaushan+Script&family=Kings&family=Kirang+Haerang&family=Lobster&family=Mr+Dafoe&family=Praise&family=Rye&family=Teko&family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+
+:root {
+    --green-color: #3a9e53;
+    --galaxy-color: #ca1694;
+    --white-color: #fff;
+    --black-color: #000;
+    --bubble-color: #ffffe0;
+    --dbubble-color: #36363d;
+}
+
+body {
+    background-image: url(../img/Shiva.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    transition: 0.2s linear;
+    color: var(--black-color);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    background-color: var(--white-color);
+    opacity: 0.875;
+}
+
+nav a {
+    color: var(--galaxy-color);
+}
+
+nav a:hover,
+nav a:active {
+    background-color: var(--green-color);
+}
+
+a:link {
+    padding: 7px 12px;
+    text-align: center;
+    color: var(--black-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#burgerMenu {
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    z-index: 50;
+    padding: 5px 8px;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+    color: var(--green-color);
+}
+
+#resumeIcons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+}
+
+header {
+    margin-bottom: 0.75rem;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Bangers', sans-serif;
+    text-shadow: -1px -1px #ffff00, 1px 1px #ffa500, 2px 2px #ffa500;
+}
+
+h2 {
+    margin: 1.5rem;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main,
+section {
+    margin: 5rem 0;
+    padding: 0.25rem 0;
+    border-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+}
+
+main p {
+    padding: 0;
+    margin: 0 0.75rem 0 0;
+    font-size: 1.15rem;
+}
+
+button {
+    padding: .5em 1.5em;
+    background: #FFF;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #dfa300;
+    border-color: #FFF;
+}
+
+#myDrawing {
+    margin: 2.5rem;
+    width: 35rem;
+    height: 25rem;
+    cursor: pointer;
+}
+
+.bubble {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: var(--bubble-color);
+    border: 8px solid #666;
+    border-radius: 30px;
+}
+
+tri:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -40px;
+    top: 150px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+
+.tri:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    top: 175px;
+    border: 12px solid;
+    border-color: var(--bubble-color) var(--bubble-color) transparent transparent;
+}
+
+
+p>a {
+    background: transparent;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+#about p {
+    padding: 0 2.5rem;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* structure de la frise */
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: var(--black-color);
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.date {
+    display: block;
+    width: 200px;
+    background: var(--green-color);
+    border: 3px solid #015249;
+    color: #ededed;
+    margin: 0 auto;
+    padding: 3px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timeline li {
+    margin-bottom: 25px;
+    position: relative;
+
+}
+
+.timeline li:before,
+.timeline li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline li:after {
+    clear: both;
+}
+
+.timeline li:before,
+.timeline li:after {
+    content: " ";
+    display: table;
+}
+
+/* bulles de la frise */
+
+.timeline li .panel {
+    margin: 0 1.275rem;
+    width: 46%;
+    float: left;
+    background: var(--bubble-color);
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* cercles de la frise */
+.timeline li .circle {
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    text-align: center;
+    background: var(--green-color);
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: -16px;
+    border: 3px solid #015249;
+    border-radius: 50%;
+}
+
+/* flèches de la frise */
+.timeline li .panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline li .panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline li.inverted .panel {
+    float: right;
+}
+
+.timeline li.inverted .panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.inverted .panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+/* Compétences */
+#carCmpt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galaxy {
+    position: relative;
+    perspective: 1000px;
+}
+
+#imgRound {
+    margin-bottom: 2rem;
+    width: 28rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.ring {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+    z-index: 0;
+}
+
+.ring:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+    width: 250px;
+    height: 200px;
+    line-height: 50px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contain {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.html {
+    transform: rotateY(0deg) translateZ(300px);
+
+}
+
+.css {
+    transform: rotateY(22.5deg) translateZ(300px);
+
+}
+
+.js {
+    transform: rotateY(45deg) translateZ(300px);
+
+}
+
+.bootstrap {
+    transform: rotateY(67.5deg) translateZ(300px);
+
+}
+
+.wordpress {
+    transform: rotateY(90deg) translateZ(300px);
+
+}
+
+.xd {
+    transform: rotateY(112.5deg) translateZ(300px);
+
+}
+
+.photoshop {
+    transform: rotateY(135deg) translateZ(300px);
+
+}
+
+.premiere {
+    transform: rotateY(157.5deg) translateZ(300px);
+
+}
+
+.illustrator {
+    transform: rotateY(180deg) translateZ(300px);
+
+}
+
+.audacity {
+    transform: rotateY(202.5deg) translateZ(300px);
+
+}
+
+.java {
+    transform: rotateY(225deg) translateZ(300px);
+
+}
+
+.c {
+    transform: rotateY(247.5deg) translateZ(300px);
+
+}
+
+.office {
+    transform: rotateY(270deg) translateZ(300px);
+
+}
+
+.english {
+    transform: rotateY(292.5deg) translateZ(300px);
+
+}
+
+.japanese {
+    transform: rotateY(315deg) translateZ(300px);
+
+}
+
+.india {
+    transform: rotateY(337.5deg) translateZ(300px);
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+#webCmpt, #adobeCmpt, #otherCmpt, #langCmpt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cItem {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain2 {
+    width: 100px;
+    height: 25px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.level {
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-star,
+.fa-star-half-alt {
+    font-size: .75rem;
+    color: #ffff00;
+}
+
+/* Portfolio */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.option:hover .overlay {
+    height: 100%;
+    transition: all 0.5s;
+    border-radius: 15px;
+}
+
+.image-box {
+    background-image: url(../img/sombra-skull.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bubble-color);
+    overflow: hidden;
+    width: 100%;
+    height: 76px;
+    transition: .5s ease;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.overlay .text {
+    text-align: center;
+    padding-top: 30px;
+    height: 100%;
+}
+
+.carousel ul.tags {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: 25px;
+}
+
+.carousel .tags li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--green-color);
+    border-radius: 5px;
+}
+
+.carousel ul.desc {
+    margin: 20px 30px;
+    height: 170px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel .desc li:before {
+    padding-right: 10px;
+}
+
+mark {
+    border-radius: 3px;
+    padding: 0 0.25em;
+}
+
+.orange {
+    background: #F6A844;
+}
+
+.pink {
+    background: #D1897B;
+}
+
+.bluegreen {
+    background: #3D858E;
+}
+
+span.OpenSans {
+    font-family: 'Open Sans Condensed';
+}
+
+/* Loisirs */
+#hobbies {
+    margin: 1.5rem 3rem;
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(4, 1fr);
+}
+
+.hobbieBox {
+    position: relative;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.hobbieBox * {
+    transition: all .25s ease-in-out;
+}
+
+.hobbieBox>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#first {
+    grid-area: 1/1/2/2;
+}
+
+#second {
+    grid-area: 2/2/3/3;
+}
+
+#third {
+    grid-area: 1/3/2/4;
+}
+
+#fourth {
+    grid-area: 2/4/3/5;
+}
+
+.hobbieBox h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.hobbieBox img:hover {
+    opacity: .25;
+}
+
+.hobbieBox:hover h3 {
+    transform: translate(-50%, -50%) scale(1);
+    transition: all .25s cubic-bezier(0, -0.01, 0.15, 1.86);
+}
+
+/* Contact */
+#contact {
+    padding: 0.25rem 2rem;
+}
+
+.comic-pane {
+    width: 600px;
+    height: 220px;
+    top: 10px;
+    left: 35%;
+    position: relative;
+    overflow: hidden;
+}
+
+.dialog {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    left: 37px;
+    transform: skew(-15deg);
+    background: #ffffe0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dialog:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 200px;
+    width: 80px;
+    left: -27px;
+    transform: skew(15deg);
+    background: #ffffe0;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dialog p {
+    width: 260px;
+    line-height: 1.2em;
+    margin-top: 25px;
+    margin-left: 15px;
+    transform: skew(15deg);
+}
+
+/* Footer */
+footer {
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab {
+    font-size: 2.5rem;
+    color: var(--black-color);
+}
+
+/* Flèche */
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+}
+
+.fa-arrow-up {
+    color: var(--galaxy-color);
+    font-size: 2rem;
+}
+
+#top p {
+    color: var(--galaxy-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}

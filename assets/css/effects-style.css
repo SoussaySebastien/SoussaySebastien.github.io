@@ -1,0 +1,178 @@
+/* Le mode dark */
+.toggle {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.25rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label {
+    height: 26px;
+    width: 50px;
+    background: rgb(182, 182, 182);
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px var(--green-color);
+}
+
+.label .ball {
+    background: var(--green-color);
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateX(0px);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(23px);
+}
+
+.fa-moon {
+    color: var(--black-color);
+}
+
+/* DARK MODE */
+.dark {
+    background-image: url(../img/Galaxie.gif);
+    color: var(--white-color);
+}
+
+.dark h2,
+.dark h3,
+.dark h4 {
+    text-shadow: -1px -1px #0000ff, 1px 1px #0000ff, 2px 2px #8a2be2;
+}
+
+.dark .label {
+    box-shadow: 2px 1px 1px var(--galaxy-color);
+    background: #888;
+}
+
+.dark .ball {
+    background: var(--galaxy-color);
+}
+
+.dark nav {
+    background-color: var(--black-color);
+}
+
+.dark nav a {
+    color: var(--green-color);
+}
+
+.dark nav a:hover,
+nav a:active {
+    background-color: var(--galaxy-color);
+}
+
+.dark a:link {
+    color: var(--white-color);
+}
+
+.dark p>a {
+    color: var(--white-color);
+}
+
+.dark #burgerMenu {
+    color: var(--galaxy-color);
+}
+
+.dark #resumeIcons {
+    color: var(--galaxy-color);
+}
+
+.dark .bubble {
+    background-color: var(--dbubble-color);
+}
+
+.dark .tri:after {
+    border-color: var(--dbubble-color) var(--dbubble-color) transparent transparent;
+}
+
+.dark .date {
+    background: var(--galaxy-color);
+    border: 3px solid #720c53;
+}
+
+.dark .timeline::before {
+    background-color: var(--white-color);
+}
+
+.dark .timeline li .circle {
+    background: var(--galaxy-color);
+    border: 3px solid #720c53;
+}
+
+.dark .timeline li .panel {
+    background: var(--dbubble-color);
+}
+
+.dark .timeline li .panel:after {
+    border-left: var(--dbubble-color);
+    border-right: var(--dbubble-color);
+}
+
+.dark .carousel .tags li {
+    background-color: var(--galaxy-color);
+}
+
+.dark .text {
+    background-color: var(--dbubble-color);
+}
+
+.dark .fab {
+    color: var(--white-color);
+}
+
+.dark .fa-arrow-up {
+    color: var(--green-color);
+}
+
+.dark #top p {
+    color: var(--green-color);
+}
+
+.dark .dialog {
+    background: var(--dbubble-color);
+}
+
+.dark .dialog:before {
+    background: var(--dbubble-color);
+}
+
+/* titre en mode Loki */
+.lokiMode {
+    background-color: var(--black-color);
+    background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-size: cover;
+    color: #ffffda;
+    font-size: 0.75rem;
+}
+
+.Soussay,
+.Sébastien {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+
+.letter {
+    text-shadow: 0 0 0.4em #ffffda, 0 0 0.5em #ffffda, 0 0 0.25em #ffffda;
+    mix-blend-mode: screen;
+    padding: 0.5rem;
+}

@@ -1,0 +1,288 @@
+@media screen and (max-width:992px) {
+
+    /* Navbar */
+    ul.topnav {
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 25%;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+
+    }
+
+    ul.topnav.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #burgerMenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .tri:before {
+        left: 75px;
+        right: auto;
+        top: auto;
+        bottom: -40px;
+        border-color: #666 #666 transparent transparent;
+    }
+
+    .tri:after {
+        left: 100px;
+        right: auto;
+        top: auto;
+        bottom: -20px;
+        border-color: lightyellow lightyellow transparent transparent;
+    }
+
+    #myDrawing {
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .dark ul.topnav {
+        background-color: var(--black-color);
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main, section {
+        margin: 3.5rem 0;
+    }
+
+    main p {
+        margin: 0 0.75rem;
+        font-size: 1.15rem;
+    }
+
+    /* Frise */
+    .timeline li .panel {
+        width: 44%;
+    }
+
+    /* Compétences */
+    .image-box {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    #imgRound {
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .ring {
+        margin: 1.5rem 0;
+    }
+
+    .cItem {
+        padding: 1rem;
+    }
+
+    /* Hobbies */
+    #hobbies {
+        grid-template: repeat(2, 150px) / repeat(4, 1fr);
+    }
+
+    /* Contact */
+    .comic-pane {
+        left: 27.5%;
+    }
+
+    /* Flèche */
+    #top {
+        left: 35%;
+        right: 35%;
+    }
+
+    .fa-arrow-up {
+        font-size: 1.5rem;
+    }
+
+    #top p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width:150px) and (max-width:576px) {
+
+    main, section {
+        margin: 2rem 0;
+    }
+    
+    p {
+        font-size: 0.875rem;
+    }
+
+    button {
+        width: auto;
+        height: 1.5rem;
+        font-size: .675rem;
+    }
+    
+
+    /* titre */
+    .Soussay,
+    .Sébastien {
+        font-size: 1.5rem;
+    }
+
+    #myDrawing {
+        height: 35vh;
+    }
+
+    #about p {
+        padding: 0 1.5rem;
+    }
+
+    /* frise */
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    .date {
+        width: 140px;
+    }
+
+    ul.timeline li .panel {
+        width: calc(100% - 90px);
+    }
+
+    ul.timeline li .circle {
+        top: 22px;
+        left: 22px;
+        margin-left: 0;
+    }
+
+    ul.timeline>li>.date {
+        margin: 0;
+    }
+
+    ul.timeline>li>.panel {
+        float: right;
+    }
+
+    /* flèches de la frise */
+    ul.timeline>li>.panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.timeline>li>.panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+
+    /* Compétences */
+    .image-box {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #imgRound {
+        width: 12.5rem;
+        height: 10.5rem;
+    }
+
+    .ring {
+        height: 150px;
+        width: 150px;
+    }
+
+    .item {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    img,
+    svg {
+        vertical-align: baseline;
+    }
+
+    .contain {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .contain2 {
+        width: 57.5px;
+        height: 15px;
+    }
+
+    .fa-star,
+    .fa-star-half-alt {
+        font-size: .375rem;
+    }
+
+    .cItem {
+        padding: .325rem;
+    }
+
+    /* Portfolio */
+    .carousel ul.desc {
+        font-size: 10px;
+    }
+
+    /* Loisirs */
+    #hobbies {
+        grid-template: repeat(4, 150px) / repeat(2, 1fr);
+    }
+
+    #third {
+        grid-area: 3/1/4/2;
+    }
+
+    #fourth {
+        grid-area: 4/2/5/3;
+    }
+
+    /* Contact */
+    .comic-pane {
+        width: 340px;
+        left: 25px;
+    }
+
+    .dialog {
+        width: 240px;
+    }
+
+    .dialog p {
+        width: 180px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    /* Flèche */
+    #top {
+        left: 30%;
+        right: 30%;
+    }
+
+    .fa-arrow-up {
+        font-size: 1rem;
+    }
+
+    #top p {
+        font-size: 0.75rem;
+    }
+
+}

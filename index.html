@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/effects-style.css" />
+  <link rel="stylesheet" href="assets/css/responsive-style.css" />
+  <title>CV numérique de SOUSSAY Sébastien</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul id="menu" class="topnav">
+      <li><a href="index.html" title="lien vers la page d'accueil">Accueil</a></li>
+      <li><a href="#aboutMe" title="lien vers la page 'sur la vie de SOUSSAY Sébastien'">A propos de moi</a></li>
+      <li><a href="#proExp" title="lien vers la page 'Expériences professionnelles'">Expériences pro</a></li>
+      <li><a href="#diplomas" title="lien vers la page 'Diplômes & Formations'">Diplômes & Formations</a></li>
+      <li><a href="#skills" title="lien vers la page 'Compétences'">Compétences</a></li>
+      <li><a href="#portfolio" title="lien vers la page des portfolio">Portfolio</a></li>
+      <li><a href="#loisirs" title="lien vers la page des portfolio">Loisirs</a></li>
+      <li><a href="#contact" title="lien vers le formulaire de contact">Contact</a></li>
+    </ul>
+    <div id="burgerMenu" title="Afficher/Masquer le Menu"><i id="burger" class="fas fa-bars"></i></div>
+  </nav>
+  <!-- Bouton pour le mode dark -->
+
+  <div class="toggle">
+    <input type="checkbox" class="checkbox" id="dark-mode" />
+    <label for="dark-mode" class="label">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </div>
+  <!-- Titre avec un effet à la générique "Loki" -->
+  <header>
+    <div class="lokiMode container-fluid">
+      <h1 class="Soussay col-7 offset-1 offset-sm-2 offset-lg-3">
+        <p class="letter">S</p>
+        <p class="letter">O</p>
+        <p class="letter">U</p>
+        <p class="letter">S</p>
+        <p class="letter">S</p>
+        <p class="letter">A</p>
+        <p class="letter">Y</p>
+      </h1>
+      <div class="Sébastien h1 col-9 offset-sm-1 offset-lg-2">
+        <p class="letter">S</p>
+        <p class="letter">É</p>
+        <p class="letter">B</p>
+        <p class="letter">A</p>
+        <p class="letter">S</p>
+        <p class="letter">T</p>
+        <p class="letter">I</p>
+        <p class="letter">E</p>
+        <p class="letter">N</p>
+      </div>
+    </div>
+    <div id="resumeIcons" class="container">
+      <div class="resumeItem text-center">
+        <i class="fas fa-pencil-alt"><br>Design Web</i>
+      </div>
+      <div class="resumeItem text-center">
+        <i class="fas fa-laptop-code"><br>Front-end</i>
+      </div>
+      <div class="resumeItem text-center">
+        <i class="fas fa-mobile-alt"><br>Mobile first</i>
+      </div>
+      <div class="resumeItem text-center">
+        <i class="fas fa-upload"><br>Montage photo/vidéo</i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quelques infos sur moi -->
+  <main id="aboutMe">
+    <div>
+      <!-- Image avec un effet sur l'hover où ma photo apparaîtra si la souris passe dessus, et en mode "tactile", si l'utilisateur tape deux fois dessus -->
+      <img id="myDrawing" src="assets/img/SOUSSAY-Sébastien.jpg"
+        alt="image représentant un dessin 'en mode manga' de SOUSSAY Sébastien">
+    </div>
+    <div id="about">
+      <h2 class="text-center">Qui suis-je ?</h2>
+      <p class="bubble tri">Je m'appelle <span class="bold">SOUSSAY Sébastien Nick</span>. Je suis né le <span
+          class="bold">10 Septembre 1993</span>, ce qui fait que j'ai actuellement l'âge de <span class="bold">28
+          ans</span>. J'habite, en ce moment <span class="bold">à
+          Thourotte</span>, dont le code postal est le <span class="bold">60150</span>. Mon adresse mail professionnelle
+        est <i class="fas fa-envelope"></i> : <a href="mailto:soussaysebastien@yahoo.fr"><span
+            class="bold">soussaysebastien@yahoo.fr</span></a>. Et vous pouvez toujours me contacter au numéro suivant <i
+          class="fas fa-mobile-alt"></i> : <a href="tel:0664465593"><span class="bold">06 64 46 55 93</span></a>. Après
+        le lycée, je me suis lancé dans l'informatique, pour espérer que ma passion pour le dessin, m'oriente vers la
+        conception 3D, mais suite à divers obstacles, j'ai dû m'y résigner et commencé à travailler. Puis des soucis de
+        santé plus tard, j'ai changé de voie pour me retrouver aujourd'hui, dans ce pour quoi j'avais espéré, après mon
+        baccalauréat, mais dans un domaine différent, qui requeirt aussi de la créativité. Vous pouvez voir ou
+        télécharger mon CV (format papier), en cliquant sur le bouton : <a href="assets/docs/CV SOUSSAY Sébastien.pdf"
+          target="_blank"><button>Voir le CV papier</button></a></p>
+    </div>
+  </main>
+
+  <!-- Expériences pro -->
+  <section id="proExp">
+    <h2 class="text-center">Expériences Professionnelles</h2>
+    <ul class="timeline">
+      <li>
+        <div class="date">Depuis 2014</div>
+      </li>
+      <li>
+        <div class="circle"></div>
+        <div class="panel">
+          <h3>Aidant à domicile pour une personne proche handicapée</h3>
+          <ul class="workSkill">
+            <li>Gestion de son temps</li>
+            <li>Respect des gestes barrières</li>
+            <li>Savoir se positionner, afin d'éviter les faux mouvements</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="date">2015</div>
+      </li>
+      <li>
+      <li class="inverted">
+        <div class="circle"></div>
+        <div class="panel">
+          <h3>Téléprospecteur (EDF) à Webhelp, La Croix Saint-Ouen</h3>
+          <ul class="workSkill">
+            <li>Écoute des attentes d'un client</li>
+            <li>Répondre à ses attentes, tout en essayant de lui vendre d'autres services</li>
+            <li>Respect des règles, mis en place par l'entreprise et la CNIL</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="date">2012-2014</div>
+      </li>
+      <li>
+      <li>
+        <div class="circle"></div>
+        <div class="panel">
+          <h3>Manutentionnaire (Approvisionneur) à Unilever, Le Meux (intérim)</h3>
+          <ul class="workSkill">
+            <li>Gestion de l'espace de travail</li>
+            <li>Gestion du temps (afin d'éviter une arrêt de ligne)</li>
+            <li>Manipulation d'objets (en respectant les consignes de sécurité)</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </section>
+
+  <!-- Diplômes & Formation -->
+  <section id="diplomas">
+    <h2 class="text-center">Diplômes & Formations</h2>
+    <ul class="timeline">
+      <li>
+        <div class="date">2021-2022</div>
+      </li>
+      <li>
+        <div class="circle"></div>
+        <div class="panel">
+          <h3>Concepteur Designer UI à la MANU, Noyon</h3>
+          <p>En cours</p>
+        </div>
+      </li>
+      <li>
+        <div class="date">2012</div>
+      </li>
+      <li>
+      <li class="inverted">
+        <div class="circle"></div>
+        <div class="panel">
+          <h3>Licence Informatique à l'UPJV, Amiens</h3>
+          <p>Première année de validée</p>
+        </div>
+      </li>
+      <li>
+        <div class="date">2011</div>
+      </li>
+      <li>
+      <li>
+        <div class="circle"></div>
+        <div class="panel">
+          <h3>Baccalauréat Scientifique au lycée Jean Calivn, Noyon</h3>
+          <p>Obtenu (sans mention)</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Compétences informatiques & autres -->
+  <section id="skills">
+    <h2 class="text-center">Compétences Acquises</h2>
+    <div id="galaxy">
+      <div id="carCmpt">
+        <div class="ring">
+          <div class="item html">
+            <img src="assets/img/HTML.png" alt="logo de HTML5" class="contain" />
+          </div>
+          <div class="item css">
+            <img src="assets/img/CSS.png" alt="logo de CSS3" class="contain" />
+          </div>
+          <div class="item js">
+            <img src="assets/img/Javascript.png" alt="logo de JavaScript" class="contain" />
+          </div>
+          <div class="item bootstrap">
+            <img src="assets/img/Bootstrap.png" alt="logo de Bootstrap" class="contain" />
+          </div>
+          <div class="item wordpress">
+            <img src="assets/img/Wordpress.png" alt="logo de Wordpress" class="contain" />
+          </div>
+          <div class="item xd">
+            <img src="assets/img/XD.png" alt="logo d'Adobe XD" class="contain" />
+          </div>
+          <div class="item photoshop">
+            <img src="assets/img/Photoshop.png" alt="logo d'Adobe Photoshop" class="contain" />
+          </div>
+          <div class="item premiere">
+            <img src="assets/img/Premiere.png" alt="logo d'Adobe Premiere Pro" class="contain" />
+          </div>
+          <div class="item illustrator">
+            <img src="assets/img/Illustrator.png" alt="logo d'Adobe Illustrator" class="contain" />
+          </div>
+          <div class="item audacity">
+            <img src="assets/img/Audacity.png" alt="logo d'Audacity" class="contain" />
+          </div>
+          <div class="item java">
+            <img src="assets/img/Java.png" alt="logo de Java" class="contain" />
+          </div>
+          <div class="item c">
+            <img src="assets/img/C++.png" alt="logo de C++" class="contain" />
+          </div>
+          <div class="item office">
+            <img src="assets/img/Office.png" alt="logo de Microsoft Office" class="contain" />
+            </div>
+          <div class="item english">
+            <img src="assets/img/Anglophone.png" alt="drapeau anglais/américain 'fusionné'" class="contain" />
+          </div>
+          <div class="item japanese">
+            <img src="assets/img/Japon.png" alt="drapeau japonnais" class="contain" />
+          </div>
+          <div class="item india">
+            <img src="assets/img/Inde.png" alt="drapeau indien" class="contain" />
+          </div>
+        </div>
+        <img id="imgRound" src="assets/img/SOUSSAY-Sébastien-laugh.jpg" alt="image de SOUSSAY Sébastien">
+      </div>
+    </div>
+    <div id="webCmpt">
+      <div class="cItem">
+        <img src="assets/img/HTML.png" alt="logo de HTML5" class="contain" />
+        <div class="level contain2">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+        <div class="cItem">
+          <img src="assets/img/CSS.png" alt="logo de CSS3" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>  
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Javascript.png" alt="logo de JavaScript" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Bootstrap.png" alt="logo de Bootstrap" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>  
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Wordpress.png" alt="logo de Wordpress" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div id="adobeCmpt">
+        <div class="cItem">
+          <img src="assets/img/XD.png" alt="logo d'Adobe XD" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Photoshop.png" alt="logo d'Adobe Photoshop" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Premiere.png" alt="logo d'Adobe Premiere Pro" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Illustrator.png" alt="logo d'Adobe Illustrator" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div id="otherCmpt">
+        <div class="cItem">
+          <img src="assets/img/Audacity.png" alt="logo d'Audacity" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Java.png" alt="logo de Java" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/C++.png" alt="logo de C++" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Office.png" alt="logo de Microsoft Office" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div id="langCmpt">
+        <div class="cItem">
+          <img src="assets/img/Anglophone.png" alt="drapeau anglais/américain 'fusionné'" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Japon.png" alt="drapeau japonnais" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="cItem">
+          <img src="assets/img/Inde.png" alt="drapeau indien" class="contain" />
+          <div class="level contain2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>  
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2 class="text-center">Portfolio</h2>
+    <div class="carousel">
+
+      <div class="option">
+        <div class="image-box"></div>
+        <div class="overlay">
+          <div class="text">
+            <h4>Projet Ariette Deschamps</h4>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            <ul class="desc">
+              <li>Création d'un site vitrine pour une photographe</li>
+              <li>Utisation de grilles pour les portfolios</li>
+              <li>Site responsive</li>
+              <li>Utilisation d'images fournies</li>
+              <li>Utilisation d'une charte graphique spécifique (couleurs : <mark class="orange">#F6A844</mark>, <mark
+                  class="pink">#D1897B</mark>, <mark class="bluegreen">#3D858E</mark> et typographie : <span
+                  class="OpenSans">Open Sans Condensed</span>)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="image-box"></div>
+        <div class="overlay">
+          <div class="text">
+            <h4>Projet Les Jouets Dubois</h4>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+            </ul>
+            <ul class="desc">
+              <li>Création d'un site vitrine, grâce à l'aide de Bootstrap</li>
+              <li>Création de clients & commerce</li>
+              <li>Création d'une charte graphique</li>
+              <li>Recherche d'images de jouets (+ référence des produits, car non libre de droits)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="image-box"></div>
+        <div class="overlay">
+          <div class="text">
+            <h4>Projet Pierre/Feuille/Ciseaux</h4>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <ul class="desc">
+              <li>Création d'un site avec comme élément principal, un jeu de Pierre/Feuille/Ciseaux</li>
+              <li>Création de l'univers autour du jeu</li>
+              <li>Création du JavaScript, lié au jeu</li>
+              <li>Référencement des différentes marques</li>
+              <li>Création de la charte graphique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="option">
+        <div class="image-box"></div>
+        <div class="overlay">
+          <div class="text">
+            <h4>Projet Hackathon</h4>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <ul class="desc">
+              <li>Création d'un site, contenant un calendrier de l'avent</li>
+              <li>Création du thème lié au calendrier</li>
+              <li>Création de la charte graphique</li>
+              <li>Site responsive</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loisirs -->
+  <section id="loisirs">
+    <h2 class="text-center">Loisirs</h2>
+    <div id="hobbies">
+      <div id="first" class="hobbieBox">
+        <img class="hobbie" src="assets/img/Cinéma.jpg" alt="image d'un cinéma" />
+        <h3>Cinéma</h3>
+      </div>
+      <div id="second" class="hobbieBox">
+        <img class="hobbie" src="assets/img/Dessin.jpg" alt="image d'une main tenant un crayon devant une feuille" />
+        <h3>Dessin</h3>
+      </div>
+      <div id="third" class="hobbieBox">
+        <img class="hobbie" src="assets/img/Jeu-Vidéo.jpg"
+          alt="image de différents accessoires, permettant de jouer aux jeux vidéo" />
+        <h3>Jeux Vidéo</h3>
+      </div>
+      <div id="fourth" class="hobbieBox">
+        <img class="hobbie" src="assets/img/Séries(Netflix).jpg"
+          alt="image d'une télévision avec le logo Netflix, et d'une main tenant une télécommande" />
+        <h3>Télévision & séries</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Réseaux Sociaux -->
+  <section id="contact">
+    <h2 class="text-center">Me contacter</h2>
+    <div class="comic-pane">
+      <div class="dialog">
+        <p>Mon profil vous intéresse, et vous souhaitez me contacter, rien de simple avec ce petit formul... En fait, non, cliquez simplement sur : <a href="mailto:soussaysebastien@yahoo.fr"><button>contacter par mail</button></a> (car je ne sais pas encore gérer les bases de données !)</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="https://www.linkedin.com/in/s%C3%A9bastien-soussay-89b108227/" target="_blank"><i class="fab fa-linkedin" target="_blank"></i></a>
+    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>-->
+    <a href="#"><i class="fab fa-instagram"></i></a> 
+  </footer>
+
+  <a href="#" id="top">
+    <i class="fas fa-arrow-up"></i>
+    <p>Retour en haut de page</p>
+  </a>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/8bafb0437c.js" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
