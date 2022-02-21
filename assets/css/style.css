@@ -522,13 +522,32 @@ p>a {
 }
 
 .image-box {
-    background-image: url(../img/sombra-skull.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 30rem;
     height: 30rem;
     border-radius: 15px;
+}
+
+#ad.image-box {
+    background-image: url(../img/Mockup_Ariette_Deschamps.png);
+}
+
+#jd.image-box {
+    background-image: url(../img/Mockup_Jouets_Dubois.png);
+}
+
+#pfc.image-box {
+    background-image: url(../img/Mockup_PFC.png);
+}
+
+#ph.image-box {
+    background-image: url(../img/Mockup_hackathon.png);
+}
+
+#wp.image-box {
+    background-image: url(../img/Mockup_Wordpress.png);
 }
 
 .overlay {
