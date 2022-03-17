@@ -380,67 +380,72 @@ p>a {
 }
 
 .css {
-    transform: rotateY(22.5deg) translateZ(300px);
+    transform: rotateY(21deg) translateZ(300px);
 
 }
 
 .js {
-    transform: rotateY(45deg) translateZ(300px);
+    transform: rotateY(42deg) translateZ(300px);
 
 }
 
 .bootstrap {
-    transform: rotateY(67.5deg) translateZ(300px);
+    transform: rotateY(63deg) translateZ(300px);
 
 }
 
 .wordpress {
-    transform: rotateY(90deg) translateZ(300px);
+    transform: rotateY(84deg) translateZ(300px);
 
 }
 
 .xd {
-    transform: rotateY(112.5deg) translateZ(300px);
+    transform: rotateY(105deg) translateZ(300px);
 
 }
 
 .photoshop {
-    transform: rotateY(135deg) translateZ(300px);
+    transform: rotateY(126deg) translateZ(300px);
 
 }
 
 .premiere {
-    transform: rotateY(157.5deg) translateZ(300px);
+    transform: rotateY(147deg) translateZ(300px);
 
 }
 
 .illustrator {
-    transform: rotateY(180deg) translateZ(300px);
+    transform: rotateY(168deg) translateZ(300px);
+
+}
+
+.indesign {
+    transform: rotateY(189deg) translateZ(300px);
 
 }
 
 .audacity {
-    transform: rotateY(202.5deg) translateZ(300px);
+    transform: rotateY(210deg) translateZ(300px);
 
 }
 
 .java {
-    transform: rotateY(225deg) translateZ(300px);
+    transform: rotateY(231deg) translateZ(300px);
 
 }
 
 .c {
-    transform: rotateY(247.5deg) translateZ(300px);
+    transform: rotateY(252deg) translateZ(300px);
 
 }
 
 .office {
-    transform: rotateY(270deg) translateZ(300px);
+    transform: rotateY(273deg) translateZ(300px);
 
 }
 
 .english {
-    transform: rotateY(292.5deg) translateZ(300px);
+    transform: rotateY(294deg) translateZ(300px);
 
 }
 
@@ -450,7 +455,7 @@ p>a {
 }
 
 .india {
-    transform: rotateY(337.5deg) translateZ(300px);
+    transform: rotateY(336deg) translateZ(300px);
 
 }
 
