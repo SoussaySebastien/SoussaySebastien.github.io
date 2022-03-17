@@ -50,6 +50,11 @@
         height: 50vh;
     }
 
+    .dark {
+        background-image: url(../img/Galaxie.jpg);
+        color: var(--white-color);
+    }
+
     .dark ul.topnav {
         background-color: var(--black-color);
     }
@@ -118,6 +123,11 @@
 }
 
 @media screen and (min-width:150px) and (max-width:576px) {
+
+    .dark {
+        background-image: url(../img/Galaxie.jpg);
+        color: var(--white-color);
+    }
 
     main, section {
         margin: 2rem 0;
