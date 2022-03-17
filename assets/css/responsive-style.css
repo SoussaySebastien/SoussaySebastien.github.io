@@ -51,7 +51,7 @@
     }
 
     .dark {
-        background-image: url(../img/Galaxie.jpg);
+        background-image: url(../img/Galaxy.jpg);
         color: var(--white-color);
     }
 
@@ -125,7 +125,7 @@
 @media screen and (min-width:150px) and (max-width:576px) {
 
     .dark {
-        background-image: url(../img/Galaxie.jpg);
+        background-image: url(../img/Galaxy.jpg);
         color: var(--white-color);
     }
 
